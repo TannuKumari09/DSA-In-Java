@@ -1,6 +1,6 @@
 package String;
 
-public class PalindromeSubString {
+public class Palindrome {
     static void isPalindrome(String str){
         int left = 0;
         int right = str.length()-1;
