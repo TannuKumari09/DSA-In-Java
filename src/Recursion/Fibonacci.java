@@ -20,3 +20,7 @@ public class Fibonacci {
         System.out.println(fib(n));
     }
 }
+
+
+// Time Complexity: O(2^n)
+// Space Complexity: O(n)
