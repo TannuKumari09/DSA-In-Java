@@ -16,3 +16,5 @@ public class Factorial {
         System.out.println(factorial(n));
     }
 }
+//  Time Complexity: O(n)
+// Space Complexity: O(n)
