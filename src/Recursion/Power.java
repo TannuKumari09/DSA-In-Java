@@ -10,9 +10,11 @@ public class Power {
 //    Method 2
     static int pow(int p, int q){
         if(q == 0) return 1;
+        // check even power
         if(q % 2 == 0){
             return pow(p, q/2) * pow(p, q/2);
         }
+            // check odd power
         else{
             return p * pow(p, q/2) * pow(p, q/2);
         }
