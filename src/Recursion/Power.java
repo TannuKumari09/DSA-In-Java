@@ -8,6 +8,7 @@ public class Power {
 //    }
 
 //    Method 2
+    // TIME COMPLEXITY - O(q)
 //    static int pow(int p, int q){
 //        if(q == 0) return 1;
 //        if(q % 2 == 0){
@@ -17,15 +18,16 @@ public class Power {
 //            return p * pow(p, q/2) * pow(p, q/2);
 //        }
 //    }
-//    method -3
+// METHOD -3
+    // TIME COMPLEXITY - O(log q)
     static int pow(int p, int q){
         if(q == 0) return 1;
-        int smallPow = pow(p, q/2);
+        int smallAns = pow(p, q/2);
         if(q % 2 == 0){
-            return smallPow * smallPow;
+            return smallAns * smallAns;
         }
         else{
-            return p * smallPow * smallPow;
+            return p * smallAns * smallAns;
         }
     }
     public static void main(String[] args) {
