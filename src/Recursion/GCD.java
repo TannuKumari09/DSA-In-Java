@@ -1,7 +1,6 @@
 package Recursion;
 
 import java.util.Scanner;
-
 public class GCD {
     static  int gcd(int x,int y){
         while(x % y != 0){
